@@ -1,6 +1,6 @@
 Package: swper
 Title: Calculate Survey-based Women emPowERment index (SWPER) 
-Version: 0.1.0
+Version: 0.1.1
 Depends:
     R (>= 4.3.0)
 Author: Percy Soto-Becerra <psoto@continental.edu.pe> [aut, cre] (<https://orcid.org/0000-0001-5332-9254>)
