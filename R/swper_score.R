@@ -37,7 +37,7 @@
 swper_score <- function(df, cols, indices = "all", standardization = "raw") {
   valid_indices <- paste0("score_", c("av", "si", "dm"))
 
-  if (is.character(indices) && indices == "all") {
+  if (identical(indices, "all")) {
     indices <- valid_indices
   } else if (!all(indices %in% valid_indices)) {
     stop("Invalid index specified. Please use 'all' or a vector containing any combination of 'score_av', 'score_si', and 'score_dm'.")
