@@ -3,9 +3,7 @@ Title: Calculate Survey-based Women emPowERment index (SWPER)
 Version: 0.1.0
 Depends:
     R (>= 4.3.0)
-Author: 
-    person("Percy", "Soto-Becerra", email = "psoto@continental.edu.pe", 
-        role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5332-9254"))
+Author: Percy Soto-Becerra <psoto@continental.edu.pe> [aut, cre] (<https://orcid.org/0000-0001-5332-9254>)
 Maintainer: Percy Soto-Becerra <psoto@continental.edu.pe>
 Description: This packages has a variety of functions to calculate the SWPER score and derived indicators.
     Calculates the SWPER score for a given dataset and set of indices, and returns the result as a data frame.
