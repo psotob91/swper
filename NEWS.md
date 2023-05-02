@@ -1,3 +1,3 @@
-# swper 0.1.0
+# swper 0.1.1
 
-* Initial version of packages.
+* Added a `NEWS.md` file to track changes to the package.
