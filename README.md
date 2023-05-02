@@ -84,6 +84,11 @@ conducted:
 Please note that the SWPER index created by the `swper` package is based
 on the measures of women’s empowerment validated in the last article.
 
+## Changes and Updates
+
+For detailed information about the changes and updates made in each
+version of the package, please refer to the [NEWS.md](NEWS.md) file.
+
 ## Contributing
 
 If you encounter any issues or have suggestions for new features, please

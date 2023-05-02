@@ -2,22 +2,47 @@
 % Please edit documentation in R/swper_score.R
 \name{swper_score}
 \alias{swper_score}
-\title{Calculate Survey-based Women emPowERment index (SWPER)}
+\title{Calculate the Survey-based Women emPowERment index (SWPER)}
 \usage{
-swper_score(df, cols, indices, estandarizacion = NULL)
+swper_score(df, cols, indices = "all", standardization = "raw")
 }
 \arguments{
-\item{df}{The dataset to use.}
+\item{df}{A data frame containing the input data.}
 
-\item{cols}{The columns of the dataset to use.}
+\item{cols}{A vector of column names used for calculating the SWPER index.}
 
-\item{indices}{The indices to use in the SWPER index calculation.}
+\item{indices}{A character vector indicating which indices to calculate (default: "all").
+\itemize{
+\item "score_av": Attitude to Violence index.
+\item "score_si": Social Independence index.
+\item "score_dm": Decision Making index.
+}}
 
-\item{estandarizacion}{The region of standardization to use.}
+\item{standardization}{A character vector indicating the regions for standardization (default: "raw").
+\itemize{
+\item "raw": No standardization applied.
+\item Other values represent different standardization regions.
+}}
 }
 \value{
-A data frame containing the SWPER index for each combination of indices and standardization region.
+A data frame containing the SWPER index for each combination of indices and standardization region. The data frame may have the following columns:
+\itemize{
+\item swper_score_av_raw: The raw SWPER index for the "av" index (Attitude to Violence) without standardization.
+\item swper_score_av_glob: The global standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_sa: The South Asia standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_eap: The East Asia & the Pacific standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_euca: The Europe & Central Asia standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_mena: The Middle East & North Africa standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_wca: The West & Central Africa standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_eas: The Eastern & Southern Africa standardized SWPER index for the "av" index (Attitude to Violence).
+\item swper_score_av_lac: The Latin America & Caribbean standardized SWPER index for the "av" index (Attitude to Violence).
+Similar columns will be present for the "si" (Social Independence) and "dm" (Decision Making) indices, with the respective suffixes.
+}
 }
 \description{
-This function calculates the SWPER score for a given dataset and set of indices, and returns the result as a data frame.
+This function calculates the SWPER index for each combination of indices and standardization regions.
+}
+\examples{
+# Load sample data
+data(sample_data)
 }

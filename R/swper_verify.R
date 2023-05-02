@@ -14,7 +14,6 @@
 #'
 
 swper_verify <- function(df, cols) {
-
   valid_codes_per_variable <- list(
     c(-1, 0, 1), # x1
     c(-1, 0, 1), # x2
@@ -29,12 +28,12 @@ swper_verify <- function(df, cols) {
     "years", # x11
     c(-1, 1), # x12
     c(-1, 1), # x13
-    c(-1, 1)  # x14
+    c(-1, 1) # x14
   )
 
   # Seleccionamos las columnas del data frame
   df_filtrado <- df |>
-    dplyr::select({{cols}})
+    dplyr::select({{ cols }})
 
   # Verificamos si los valores en las columnas están dentro de los códigos válidos específicos
   verification_results <- lapply(seq_along(df_filtrado), function(i) {

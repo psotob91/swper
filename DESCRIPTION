@@ -1,24 +1,27 @@
 Package: swper
-Type: Package
 Title: Calculate Survey-based Women emPowERment index (SWPER) 
 Version: 0.1.0
 Depends:
     R (>= 4.3.0)
-Author: Percy Soto-Becerra
-Maintainer: Percy Soto-Becerra <percys1991@gmail.com>
+Author: 
+    person("Percy", "Soto-Becerra", email = "psoto@continental.edu.pe", 
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5332-9254"))
+Maintainer: Percy Soto-Becerra <psoto@continental.edu.pe>
 Description: This packages has a variety of functions to calculate the SWPER score and derived indicators.
     Calculates the SWPER score for a given dataset and set of indices, and returns the result as a data frame.
     Categorize the SWPER score according to pre-scified cut-offs.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
+URL: https://github.com/psotob91/swper
+BugReports: https://github.com/psotob91/swper/issues
 Imports:
     dplyr (>= 1.1.2),
     tidyr (>= 1.3.0),
     purrr (>= 1.0.1),
     tibble (>= 3.2.1),
     rlang (>= 1.1.1)
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
 Suggests: 
     roxygen2
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
